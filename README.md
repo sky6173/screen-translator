@@ -1,51 +1,51 @@
-﻿# Screen Translator
+# 屏幕翻译工具
 
-Windows screen translation desktop app.
+一个 Windows 桌面屏幕翻译应用。
 
-Screen Translator lets you select a region on screen, extract visible text with Windows OCR or UI Automation, translate it through an OpenAI-compatible API, and show the result in a lightweight overlay.
+它可以让你框选屏幕区域，通过 Windows OCR 或 UI Automation 提取文字，再调用 OpenAI 兼容接口进行翻译，并把结果显示在轻量悬浮窗口或结果面板中。
 
-## Latest Release
+## 最新版本
 
-Version: `0.1.0`
+版本：`0.1.0`
 
-Download:
+下载文件：
 
 ```text
 releases/v0.1.0/screen-translator-0.1.0-win-x64.zip
 ```
 
-Checksum:
+校验文件：
 
 ```text
 releases/v0.1.0/screen-translator-0.1.0-win-x64.zip.sha256
 ```
 
-Release notes:
+版本说明：
 
 ```text
 releases/v0.1.0/RELEASE_NOTES.md
 ```
 
-## Requirements
+## 运行要求
 
-- Windows 10 or Windows 11 x64.
-- An OpenAI-compatible API endpoint, API key, and model.
-- No separate .NET installation is required for the release zip.
+- Windows 10 或 Windows 11 x64。
+- 一个 OpenAI 兼容的 API 地址、API Key 和可用模型。
+- 发布包为自包含版本，不需要额外安装 .NET。
 
-## Run
+## 使用方法
 
-1. Extract the zip file.
-2. Run `ScreenTranslator.App.exe` from the extracted folder.
-3. Configure Base URL, API Key, and model in the app.
-4. Click the model-fetch button to confirm the API connection and load models.
-5. Start screen-region translation from the app, tray menu, or hotkey.
+1. 解压 `screen-translator-0.1.0-win-x64.zip`。
+2. 在解压后的文件夹中运行 `ScreenTranslator.App.exe`。
+3. 在应用内配置 Base URL、API Key 和模型。
+4. 点击获取模型按钮，用模型列表确认 API 连接是否可用。
+5. 通过主窗口、托盘菜单或快捷键开始框选区域翻译。
 
-## Privacy And Settings
+## 隐私和设置
 
-- API keys are stored locally by the application.
-- Saved API keys are protected with Windows DPAPI for the current Windows user.
-- Do not share `%APPDATA%\ScreenTranslator\settings.json`.
+- API Key 只保存在本机。
+- 已保存的 API Key 会使用 Windows DPAPI 按当前 Windows 用户保护。
+- 不要公开分享 `%APPDATA%\ScreenTranslator\settings.json`。
 
-## Source
+## 源代码
 
-The source code and development notes are maintained separately in the private development repository while the app is being refined.
+源代码、开发文档和内部实现记录保存在私有开发仓库中。这个公开仓库只存放面向用户的发布说明和正式发布包。
