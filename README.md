@@ -1,27 +1,51 @@
-# Screen Translator
+﻿# Screen Translator
 
-Windows screen translation preview build.
+Windows screen translation desktop app.
 
-This tool lets you select a region on screen, reads visible text with Windows OCR or UI Automation, and shows the translation in a lightweight floating overlay.
+Screen Translator lets you select a region on screen, extract visible text with Windows OCR or UI Automation, translate it through an OpenAI-compatible API, and show the result in a lightweight overlay.
 
-## Download
+## Latest Release
 
-Download `ScreenTranslator-win-x64.zip` from this repository or from the release assets.
+Version: `0.1.0`
+
+Download:
+
+```text
+releases/v0.1.0/screen-translator-0.1.0-win-x64.zip
+```
+
+Checksum:
+
+```text
+releases/v0.1.0/screen-translator-0.1.0-win-x64.zip.sha256
+```
+
+Release notes:
+
+```text
+releases/v0.1.0/RELEASE_NOTES.md
+```
+
+## Requirements
+
+- Windows 10 or Windows 11 x64.
+- An OpenAI-compatible API endpoint, API key, and model.
+- No separate .NET installation is required for the release zip.
 
 ## Run
 
 1. Extract the zip file.
-2. Run `ScreenTranslator.App.exe`.
-3. Open settings from the tray icon.
-4. Configure an OpenAI-compatible translation API endpoint, API key, and model.
-5. Start region translation from the app or hotkey.
+2. Run `ScreenTranslator.App.exe` from the extracted folder.
+3. Configure Base URL, API Key, and model in the app.
+4. Click the model-fetch button to confirm the API connection and load models.
+5. Start screen-region translation from the app, tray menu, or hotkey.
 
-## Notes
+## Privacy And Settings
 
-- Windows 10/11 x64 is required.
 - API keys are stored locally by the application.
-- This is an early preview build and may change frequently.
+- Saved API keys are protected with Windows DPAPI for the current Windows user.
+- Do not share `%APPDATA%\ScreenTranslator\settings.json`.
 
-## Build
+## Source
 
-The source code is maintained separately while this preview is being refined.
+The source code and development notes are maintained separately in the private development repository while the app is being refined.
