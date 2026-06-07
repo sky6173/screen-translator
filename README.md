@@ -8,15 +8,22 @@
 
 版本：`0.1.0`
 
-下载文件：
+推荐下载新版安装程序：
+
+```text
+releases/v0.1.0/screen-translator-0.1.0-win-x64-setup.exe
+```
+
+安装程序校验文件：
+
+```text
+releases/v0.1.0/screen-translator-0.1.0-win-x64-setup.exe.sha256
+```
+
+便携版压缩包仍然保留：
 
 ```text
 releases/v0.1.0/screen-translator-0.1.0-win-x64.zip
-```
-
-校验文件：
-
-```text
 releases/v0.1.0/screen-translator-0.1.0-win-x64.zip.sha256
 ```
 
@@ -34,11 +41,20 @@ releases/v0.1.0/RELEASE_NOTES.md
 
 ## 使用方法
 
+推荐方式：
+
+1. 下载并运行 `screen-translator-0.1.0-win-x64-setup.exe`。
+2. 按中文安装向导完成安装。
+3. 从开始菜单或桌面快捷方式启动 `屏幕翻译工具`。
+4. 在应用内配置 Base URL、API Key 和模型。
+5. 点击获取模型按钮，用模型列表确认 API 连接是否可用。
+6. 通过主窗口、托盘菜单或快捷键开始框选区域翻译。
+
+便携版方式：
+
 1. 解压 `screen-translator-0.1.0-win-x64.zip`。
 2. 在解压后的文件夹中运行 `ScreenTranslator.App.exe`。
-3. 在应用内配置 Base URL、API Key 和模型。
-4. 点击获取模型按钮，用模型列表确认 API 连接是否可用。
-5. 通过主窗口、托盘菜单或快捷键开始框选区域翻译。
+3. 不要只移动单独的 `.exe` 文件，解压后的文件夹内容需要保持在一起。
 
 ## 隐私和设置
 
