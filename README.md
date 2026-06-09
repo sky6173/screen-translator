@@ -2,18 +2,13 @@
 
 一个 Windows 桌面屏幕翻译工具。它可以框选屏幕区域，通过 Windows OCR 或 UI Automation 提取文字，再调用 OpenAI 兼容接口进行翻译，并把结果显示在轻量悬浮窗口或结果面板中。
 
-## 最新版本
+## 下载最新版
 
 当前正式版本：`v0.1.1`
 
-下载地址：
+[前往 v0.1.1 下载页面](https://github.com/sky6173/screen-translator/releases/tag/v0.1.1)
 
-- [Windows 安装包](https://github.com/sky6173/screen-translator/releases/download/v0.1.1/screen-translator-0.1.1-win-x64-setup.exe)
-- [安装包 SHA256](https://github.com/sky6173/screen-translator/releases/download/v0.1.1/screen-translator-0.1.1-win-x64-setup.exe.sha256)
-- [便携版 zip](https://github.com/sky6173/screen-translator/releases/download/v0.1.1/screen-translator-0.1.1-win-x64.zip)
-- [便携版 SHA256](https://github.com/sky6173/screen-translator/releases/download/v0.1.1/screen-translator-0.1.1-win-x64.zip.sha256)
-
-完整发布页：[v0.1.1 GitHub Release](https://github.com/sky6173/screen-translator/releases/tag/v0.1.1)
+推荐普通用户下载发布页里的 Windows 安装包。便携版 zip 保留给不想安装、只想临时运行的场景。
 
 ## 运行要求
 
@@ -41,7 +36,3 @@
 - API Key 只保存在本机。
 - 已保存的 API Key 会使用 Windows DPAPI 按当前 Windows 用户保护。
 - 不要公开分享 `%APPDATA%\ScreenTranslator\settings.json`。
-
-## 源代码
-
-源代码、开发文档、内部实现记录和构建脚本保存在私有开发仓库中。这个公开仓库只存放面向用户的发布说明和公开下载入口。
